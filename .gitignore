@@ -1,0 +1,21 @@
+/Citations of Westenbroek paper for internal dynamics/
+/Double pendulum First Test/
+/Related Papers/
+/RL methods/
+/Theory - Papers/
+
+# Cepheus Model Folder
+/Cepheus Model/Planar 2D/Cepheus 2D Planar Version.docx
+/Cepheus Model/Planar 2D/cepheus_c.m
+/Cepheus Model/Planar 2D/cepheus_H.m
+
+# Westenbroek Double Pendulum Folder
+/Westenbroek Double Pendulum/DoublePendulum_Westenbroek_paper.pdf
+/Westenbroek Double Pendulum/DoublePendulum_Westenbroek_paper.docx
+/Westenbroek Double Pendulum/theta_best_REINFORCE.mat
+/Westenbroek Double Pendulum/theta_final_REINFORCE.mat
+/Westenbroek Double Pendulum/simulation/theta_best_REINFORCE.mat
+/Westenbroek Double Pendulum/PPO/theta_best_PPO.mat
+/Westenbroek Double Pendulum/PPO/theta_final_PPO.mat
+/Westenbroek Double Pendulum/REINFORCE/theta_best_REINFORCE.mat
+/Westenbroek Double Pendulum/REINFORCE/theta_final_REINFORCE.mat
