@@ -16,10 +16,15 @@ This project investigates whether reinforcement learning can compensate for mode
 
 The first system is a fully actuated double pendulum that was studied in the work by Westenbroek et al. It serves as an initial simpler system for implementing the method.
 
+<!-- ![Double Pendulum Model](Westenbroek Double Pendulum/double_pendulum.png) -->
+<p align="center">
+  <img src="Westenbroek Double Pendulum/double_pendulum.png" alt="Double Pendulum Model" width="380">
+</p>
+
 The MATLAB implementation includes:
 
 - **Nonlinear dynamics and state-space modeling**
-  ```matlab
+  ```
   dynamics/double_pendulum_matrices.m  
   ```
   ```
@@ -27,7 +32,7 @@ The MATLAB implementation includes:
   ```
 
 - **Nominal and learned feedback-linearizing controllers**
-  ```matlab
+  ```
   fl_controller/fl_controller.m 
   ```
   ```
@@ -38,7 +43,7 @@ The MATLAB implementation includes:
   ```
 
 - **Policy features and reference trajectories**
-  ```matlab
+  ```
   policy_features.m
   ```
   ```
@@ -46,7 +51,7 @@ The MATLAB implementation includes:
   ```
 
 - **REINFORCE and PPO training implementations**
-  ```matlab
+  ```
   REINFORCE/train_theta_REINFORCE.m 
   ```
   ```
@@ -54,14 +59,14 @@ The MATLAB implementation includes:
   ```
 
 - **Simulation**
-  ```matlab
+  ```
   simulation/rollout_simulation.m
   ```
  
 
 The main script used for testing the controllers is:
 
-```matlab
+```
 main_test_model.m
 ```
 
@@ -71,10 +76,17 @@ The second system is a planar model of the Cepheus space robot, consisting of a 
 
 This system provides a more complex validation case for the learning-based feedback linearization method due to the coupled dynamics between the base and manipulator.
 
+
+<!-- ![Planar Cepheus Space Robot](Cepheus Model/planar_cepheus.png) -->
+<p align="center">
+  <img src="Cepheus Model/Planar 2D/planar_cepheus.png" alt="Planar Cepheus Space Robot" width="360" height="440">
+</p>
+
+
 The MATLAB implementation includes:
 
 - **Symbolic derivation of the dynamics and state-space modeling**
-  ```matlab
+  ```
   model/planar2D_model_matrices_derivation.m
   ```
   ```
@@ -88,7 +100,7 @@ The MATLAB implementation includes:
   ```
 
 - **Nominal and learned feedback-linearizing controllers**
-  ```matlab
+  ```
   fl_controller/cepheus_fl_controller.m 
   ```
   ```
@@ -99,7 +111,7 @@ The MATLAB implementation includes:
   ```
 
 - **Policy features and reference trajectories**
-  ```matlab
+  ```
   cepheus_policy_features.m  
   ```
   ```
@@ -107,7 +119,7 @@ The MATLAB implementation includes:
   ```
 
 - **REINFORCE and PPO training implementations**
-  ```matlab
+  ```
   REINFORCE/cepheus_train_theta_REINFORCE.m
   ```
   ```
@@ -115,14 +127,14 @@ The MATLAB implementation includes:
   ```
 
 - **Simulation**
-  ```matlab
+  ```
   cepheus_rollout_simulation.m
   ```
 
 
 The main script used for testing the controllers is:
 
-```matlab
+```
 main_test_cepheus.m
 ```
 
@@ -132,7 +144,7 @@ Additional experiments use the trajectory tracking task considered by Skandalaki
 
 The corresponding scripts are:
 
-```matlab
+```
 cepheus_train_theta_PPO_skandalakis.m
 ```
 ```
